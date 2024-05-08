@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 nav {
   display: flex;
@@ -136,7 +135,7 @@ nav button {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("../img/HistoiredeLiutHeroImg.png");
+  background-image: url("../img/AnnuaireHeroimg.png");
   height: 91vh;
 }
 .hero h1 {
@@ -149,6 +148,111 @@ nav button {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+button {
+  border: none;
+  padding: 0.7rem 1.3rem;
+  border-radius: 0.4rem;
+  background-color: #29b627;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  width: 8rem;
+}
+
+section{
+    padding: 6rem 20rem;
+
+}
+.section_header{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+.section_header h3{
+    font-family: "DM Serif Display", serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.title_souligne{
+    position: relative;
+
+}
+.soulignement{
+    z-index: -10;
+    top: 1.5rem;
+    left: -0.4rem;
+    width: 108%;
+    height: 40%;
+    position: absolute;
+    background-color: rgb(41, 182, 39, 0.5);
+}
+.section__filtre a{
+    text-decoration: none;
+    font-family: "DM Serif Display", serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.card_container {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 6rem; 
+}
+
+.card {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 4rem 3rem 4rem;
+    background-color: rgb(41, 182, 39, 0.2);
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card img {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    top: -3.4rem;
+    width: 6.5rem;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.card h3 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.card__details {
+    display: flex;
+    gap: 2rem;
+    font-family: "DM Serif Display", serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #AFAFAF;
+}
+
+.card__description {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #000;
+    text-align: center;
+}
+
+.section__button-container{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
@@ -185,39 +289,56 @@ footer a {
 }
 
 @media screen and (max-width: 1480px) {
-    nav {
-      margin: 1.2rem 4rem;
-    }
-    nav ul {
-      gap: 2rem;
-    }
-    footer{
-      padding: 6rem 10rem;
-  
-    }
+  nav {
+    margin: 1.2rem 4rem;
   }
-  @media screen and (max-width: 1000px) {
-    .nav-container {
-      display: block;
-    }
-    nav {
-      margin: 1.2rem 1rem;
-    }
-    nav .desktop_menu {
-      display: none;
-    }
-    .hero h1 {
-      font-size: 3rem;
-    }
+  section {
+  padding: 6rem 4rem;
+  }
+  nav ul {
+    gap: 2rem;
+  }
+  footer {
+    padding: 6rem 10rem;
+  }
 
-    footer{
-      padding: 6rem 4rem;
-  
+}
+@media screen and (max-width: 1000px) {
+  .nav-container {
+    display: block;
+  }
+  section {
+    padding: 6rem 2rem;
     }
+  nav {
+    margin: 1.2rem 1rem;
   }
-  @media screen and (max-width: 800px) {
-      footer{
-          flex-direction: column;
-          gap: 4rem;
-        }
+  nav .desktop_menu {
+    display: none;
   }
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  footer {
+    padding: 6rem 4rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+    .card_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card_container {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
