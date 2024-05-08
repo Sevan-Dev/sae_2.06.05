@@ -1,0 +1,37 @@
+@media screen and (max-width: 1480px) {
+    nav {
+      margin: 1.2rem 4rem;
+    }
+    nav ul {
+      gap: 2rem;
+    }
+    footer{
+      padding: 6rem 10rem;
+  
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .nav-container {
+      display: block;
+    }
+    nav {
+      margin: 1.2rem 1rem;
+    }
+    nav .desktop_menu {
+      display: none;
+    }
+    .hero h1 {
+      font-size: 3rem;
+    }
+
+    footer{
+      padding: 6rem 4rem;
+  
+    }
+  }
+  @media screen and (max-width: 800px) {
+      footer{
+          flex-direction: column;
+          gap: 4rem;
+        }
+  }
