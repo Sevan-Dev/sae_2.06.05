@@ -13,12 +13,15 @@ nav{
     align-items: center;
     margin: 1.2rem 10rem;
 }
+nav img{
+    cursor: pointer;
+}
 nav ul{
     display: flex;
     gap: 5rem;
     align-items: center;
 }
-nav ul li{
+ul li{
     list-style: none;
 }
 nav ul li a{
@@ -57,4 +60,68 @@ nav button{
     top: 50%; left: 50%; 
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+section{
+    padding: 4rem 20rem;
+    display: flex;
+    justify-content: space-between;
+}
+section div{
+    width: 60% ;
+}
+section div h3{
+    font-family: "DM Serif Display", serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+section div p{
+    margin-top: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+
+}
+.conclusion{
+    display: flex;
+    justify-content: center;
+}
+.conclusion p{
+    margin: 6rem 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    width: 60%;
+}
+
+footer{
+    width: 100%;
+    padding: 6rem 20rem;
+    background-color: #464646;
+    display: flex;
+    justify-content: space-between;
+}
+footer h3{
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: 500;
+
+}
+
+footer ul{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+footer img{
+    margin-right: 0.5rem;
+}
+footer a{
+    text-decoration: none;
+    color: #CCCCCC;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 0.8rem;
 }
