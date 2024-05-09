@@ -402,7 +402,8 @@ h2.green_underlined {
 /* Footer */
 
 footer {
-  width: 100vw;
+  width: 100%;
+  padding: 6rem 20rem;
   background-color: #464646;
   display: flex;
   justify-content: space-between;
@@ -437,12 +438,22 @@ footer a {
   nav {
     margin: 1.2rem 4rem;
   }
+  section {
+  padding: 6rem 4rem;
+  }
   nav ul {
     gap: 2rem;
   }
-
   footer {
     padding: 6rem 10rem;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    gap: 4rem;
   }
 }
 
@@ -457,14 +468,15 @@ footer a {
     display: none;
   }
 
-  footer {
-    padding: 6rem 4rem;
-  }
 }
 
-@media screen and (max-width: 800px) {
-  footer {
-    flex-direction: column;
-    gap: 4rem;
+@media screen and (max-width: 1480px) {
+  nav {
+    margin: 1.2rem 4rem;
   }
+  nav ul {
+    gap: 2rem;
+  }
+
 }
+
