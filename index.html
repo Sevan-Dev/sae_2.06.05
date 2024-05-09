@@ -139,50 +139,25 @@
         </div>
     </section>
 
-    <section class="programme_et_histoires_section">
-        <div class="programme_evenement_section">
-            <div class="evenement">
-                <div class="date">
-                    <p class="jour">mar</p>
-                    <p class="date_jour">07</p>
-                </div>
-                <div class="description_evenement">
-                    <p class="lieu">Université de Lorraine | <span class="ville">Metz</span></p>
-                    <p class="date_complete"><span class="date">7 Mars 2024</span> <span class="hour_deb">20:00</span> - <span class="hour_fin">00:00</span></p>
-                    <p class="description_evenement">Réunion des anciens élèves</p>
-                    <p class="organisation">BUT Informatique Metz Alumni</p>
-                </div>
-            </div>
-            <button class="outlined-green-btn">Evenement à venir</button>
-        </div>
-        <div class="histoire_eleves_section">
-            <div class="histoire_eleve">
-                <div class="left">
-                    <div class="img_container"></div>
-                </div>
-                <div class="right">
-                    <p class="date_publication">date</p>
-                    <p class="name">Name</p>
-                    <p class="deb_histoire">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, laboriosam, aspernatur numquam </p>
-                </div>
-            </div>
-            <button class="outlined-green-btn">Evenement à venir</button>
-        </div>
-    </section>
-
     <section class="form_section">
         <h2 class="green_underlined">Prenez contact avec notre chef de département !</h2>
         <div class="first_description_form">
+          <div class="name_container text_container">
             <label for="name">Name</label>
             <input type="text" name="name" id="name" class="border_bottom">
-            <label for="email">Emaiil</label>
+          </div>
+          <div class="email_container text_container">
+            <label for="email">Email</label>
             <input type="text" name="email" id="email" class="border_bottom">
+          </div>
+          <div class="promo_container text_container">
             <label for="annee_promo">Anne de promotion</label>
-            <input type="text" name="annne_promo" id="annee_promo" class="border_bottom">
+            <input type="number" name="annne_promo" id="annee_promo" class="border_bottom">
+          </div>
         </div>
-        <div class="message_container">
+        <div class="message_container text_container">
             <label for="message">Message</label>
-            <textarea name="message" id="" cols="30" rows="10"></textarea>
+            <textarea name="message"></textarea>
         </div>
         <button class="green_btn">Envoyer</button>
     </section>
