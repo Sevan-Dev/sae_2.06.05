@@ -170,6 +170,7 @@ section.hero_section {
 h1.title {
   font-family: "DM Serif Display";
   font-size: 48px;
+  font-weight:500;
   width: 600px;
   text-align: center;
   text-transform: capitalize;
