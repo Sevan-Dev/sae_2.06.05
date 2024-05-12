@@ -82,31 +82,31 @@
           </div>
         </div>
         <div class="emploi_carte">
-            <div class="left w80p">
-              <h2 class="emplois_title">Titre</h2>
-              <p class="entreprise">Entreprise</p>
-              <p class="emplois_details">
-                Lorem ipsum dolor sit amet consectetur. Nulla eget sed sagittis
-                semper id. Pharetra netus erat lectus tincidunt egestas. Massa et
-                metus vitae venenatis. Nisi et nunc pellentesque nisl. Ligula
-                ullamcorper enim porta ut purus senectus orci. Molestie lacus mi
-                quam in. Tellus ac nullam leo lacus amet.
-              </p>
-            </div>
-            <div class="right w20p">
-              <svg
-                class="heart_icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  d="M12.001 4.52853C14.35 2.42 17.98 2.49 20.2426 4.75736C22.5053 7.02472 22.583 10.637 20.4786 12.993L11.9999 21.485L3.52138 12.993C1.41705 10.637 1.49571 7.01901 3.75736 4.75736C6.02157 2.49315 9.64519 2.41687 12.001 4.52853Z"
-                ></path>
-              </svg>
-              <button class="m_auto">Postulez</button>
-            </div>
+          <div class="left w80p">
+            <h2 class="emplois_title">Titre</h2>
+            <p class="entreprise">Entreprise</p>
+            <p class="emplois_details">
+              Lorem ipsum dolor sit amet consectetur. Nulla eget sed sagittis
+              semper id. Pharetra netus erat lectus tincidunt egestas. Massa et
+              metus vitae venenatis. Nisi et nunc pellentesque nisl. Ligula
+              ullamcorper enim porta ut purus senectus orci. Molestie lacus mi
+              quam in. Tellus ac nullam leo lacus amet.
+            </p>
           </div>
+          <div class="right w20p">
+            <svg
+              class="heart_icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M12.001 4.52853C14.35 2.42 17.98 2.49 20.2426 4.75736C22.5053 7.02472 22.583 10.637 20.4786 12.993L11.9999 21.485L3.52138 12.993C1.41705 10.637 1.49571 7.01901 3.75736 4.75736C6.02157 2.49315 9.64519 2.41687 12.001 4.52853Z"
+              ></path>
+            </svg>
+            <button class="m_auto">Postulez</button>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -153,12 +153,14 @@
     </footer>
 
     <script>
-         const heart = document.querySelector(".heart_icon");
+      const hearts = document.querySelectorAll(".heart_icon");
 
-        heart.addEventListener("click", function() {
-        // Change la couleur de remplissage du cœur au rouge
-        heart.classList.toggle("active");
+      hearts.forEach((heart) => {
+        heart.addEventListener("click", function () {
+          // Change la couleur de remplissage du cœur au rouge
+          heart.classList.toggle("active");
         });
+      });
     </script>
   </body>
 </html>
