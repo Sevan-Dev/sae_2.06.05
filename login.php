@@ -1,6 +1,6 @@
 <!DOCTYPE php>
 <?php
-include("php/db_connect.php");
+    include("php/db_connect.php");
 ?>
 
 <!DOCTYPE html>

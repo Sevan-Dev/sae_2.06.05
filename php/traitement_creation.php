@@ -1,11 +1,16 @@
 <!DOCTYPE php>
 <?php
+    session_start();
+
 	include "db_connect.php";
+
 	if(!empty($_POST['nom'] and $_POST['prenom'] and$_POST['email'] and $_POST['mdp'])){
         $nom = $_POST['nom'];
         $prenom = $_POST['prenom'];
 		$email = $_POST['email'];
 		$mdp = $_POST['mdp'];
+
+        $_SESSION['user_email'] = $email;
 
         $requete="SELECT utilisateurs.email FROM utilisateurs WHERE utilisateurs.email='$email'";
 		$result=$db->query($requete);
@@ -19,7 +24,16 @@
             $requete="INSERT INTO `utilisateurs` (`nom`, `prenom`, `email`, `mdp`, `annee_prom`) 
             VALUES ('$nom', '$prenom', '$email', '$mdp', NULL);";
 		    $result=$db->query($requete);
-			header("Location: ../index.html");
+
+            $requete="INSERT INTO `details` (`email`, `type_detail`, `description`) 
+            VALUES ('$email', 'metier', '');";
+		    $result=$db->query($requete);
+
+            $requete="INSERT INTO `details` (`email`, `type_detail`, `description`) 
+            VALUES ('$email', 'biographie', '');";
+		    $result=$db->query($requete);
+
+			header("Location: ../index.php");
 		}
 
 

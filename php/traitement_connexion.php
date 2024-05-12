@@ -1,9 +1,14 @@
 <!DOCTYPE php>
 <?php
-	include "db_connect.php";
+    session_start();
+
+    include "db_connect.php";
+
 	if(!empty($_POST['email'] and $_POST['mdp'])){
 		$email = $_POST['email'];
 		$mdp = $_POST['mdp'];
+
+        $_SESSION['user_email'] = $email;
 		
 		$requete="SELECT utilisateurs.mdp FROM utilisateurs WHERE utilisateurs.email='$email'";
 		$result=$db->query($requete);
@@ -11,7 +16,7 @@
 
 		$row = $result->fetch_assoc();
 		if($row['mdp']==$mdp){
-			header("Location: ../index.html");
+			header("Location: ../index.php");
 		}
 		else{
 			$error= "Mot de passe ou email incorrect";
@@ -20,7 +25,7 @@
 	
 	else{
 		$error= "Information(s) manquante(s)";
-	}	
+	}
 
 ?>
 

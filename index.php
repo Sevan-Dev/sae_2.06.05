@@ -1,3 +1,8 @@
+<!DOCTYPE php>
+<?php
+    include("php/db_connect.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,7 +23,7 @@
           <a href=""><button>CONTACT</button></a>
         </li>
         <li>
-          <a href=""><img src="./img/navbarAccount.svg" alt="" /></a>
+          <a href="profil.php"><img src="./img/navbarAccount.svg" alt="" /></a>
         </li>
       </ul>
       <div class="container nav-container">
