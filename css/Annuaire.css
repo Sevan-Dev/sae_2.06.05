@@ -150,17 +150,6 @@ nav button {
   text-align: center;
 }
 
-button {
-  border: none;
-  padding: 0.7rem 1.3rem;
-  border-radius: 0.4rem;
-  background-color: #29b627;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  cursor: pointer;
-  width: 8rem;
-}
 
 section{
     padding: 6rem 20rem;

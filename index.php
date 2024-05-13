@@ -15,15 +15,15 @@
     <nav>
       <img src="./img/logonavbar.png" alt="" />
       <ul class="desktop_menu">
-        <li><a href="">HOME</a></li>
-        <li><a href="">ACTUS</a></li>
-        <li><a href="">EMPLOIS</a></li>
-        <li><a href="">ANNUAIRE</a></li>
+        <li><a href="/index.php">HOME</a></li>
+        <li><a href="/emploi.html">EMPLOIS</a></li>
+        <li><a href="/Annuaire.html">ANNUAIRE</a></li>
+        <li><a href="/HistoiredeLiut.html">HISTOIRE DE L'IUT</a></li>
         <li>
           <a href=""><button>CONTACT</button></a>
         </li>
         <li>
-          <a href="profil.php"><img src="./img/navbarAccount.svg" alt="" /></a>
+          <a href=""><img src="./img/navbarAccount.svg" alt="" /></a>
         </li>
       </ul>
       <div class="container nav-container">

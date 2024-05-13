@@ -39,16 +39,17 @@
     <nav>
         <img src="./img/logonavbar.png" alt="" />
         <ul class="desktop_menu">
-          <li><a href="index.php">HOME</a></li>
-          <li><a href="emploi.html">EMPLOIS</a></li>
-          <li><a href="annuaire.html">ANNUAIRE</a></li>
-          <li>
-            <a href=""><button>CONTACT</button></a>
-          </li>
-          <li>
-            <a href=""><img src="./img/navbarAccount.svg" alt="" /></a>
-          </li>
-        </ul>
+        <li><a href="/index.php">HOME</a></li>
+        <li><a href="/emploi.html">EMPLOIS</a></li>
+        <li><a href="/Annuaire.html">ANNUAIRE</a></li>
+        <li><a href="/HistoiredeLiut.html">HISTOIRE DE L'IUT</a></li>
+        <li>
+          <a href=""><button>CONTACT</button></a>
+        </li>
+        <li>
+          <a href=""><img src="./img/navbarAccount.svg" alt="" /></a>
+        </li>
+      </ul>
         <div class="container nav-container">
           <input class="checkbox" type="checkbox" name="" id="" />
           <div class="hamburger-lines">
