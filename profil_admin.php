@@ -18,41 +18,41 @@
     <title>admin</title>
 </head>
 <body>
-    <nav>
-        <img src="./img/logonavbar.png" alt="" />
+      <nav>
+        <img src="img/logonavbar.png" alt="" />
         <ul class="desktop_menu">
-          <li><a href="/index.php">HOME</a></li>
-        <li><a href="/emploi.html">EMPLOIS</a></li>
-        <li><a href="/Annuaire.html">ANNUAIRE</a></li>
-        <li><a href="/HistoiredeLiut.html">HISTOIRE DE L'IUT</a></li>
-
-        <li>
-          <a href="contact.html"><button>CONTACT</button></a>
-        </li>
-        <li>
-          <a href="profil.php"><img src="./img/navbarAccount.svg" alt="" /></a>
-        </li>
-      </ul>
-      <div class="container nav-container">
-        <input class="checkbox" type="checkbox" name="" id="" />
-        <div class="hamburger-lines">
-          <span class="line line1"></span>
-          <span class="line line2"></span>
-          <span class="line line3"></span>
-        </div>
-      </div>
-
-      <div class="mobile_menu">
-        <ul>
           <li><a href="index.php">HOME</a></li>
-          <li><a href="emploi.html">EMPLOIS</a></li>
+          <li><a href="evenements.php">EVENEMENTS</a></li>
           <li><a href="annuaire.html">ANNUAIRE</a></li>
+          <li><a href="HistoiredeLiut.html">HISTOIRE DE L'IUT</a></li>
           <li>
-            <a href="contact.html"><button>CONTACT</button></a>
+            <a href="#"><button>CONTACT</button></a>
           </li>
           <li>
-            <a href="profil.php"><img src="./img/navbarAccount.svg" alt="" /></a>
+            <a href="profil.php"><img src="img/navbarAccount.svg" alt="" /></a>
           </li>
+        </ul>
+        <div class="container nav-container">
+          <input class="checkbox" type="checkbox" name="" id="" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+        </div>
+  
+        <div class="mobile_menu">
+          <ul>
+            <li><a href="index.php">HOME</a></li>
+            <li><a href="evenements.php">EVENEMENTS</a></li>
+            <li><a href="annuaire.html">ANNUAIRE</a></li>
+            <li><a href="HistoiredeLiut.html">HISTOIRE DE L'IUT</a></li>
+            <li>
+              <a href="#"><button>CONTACT</button></a>
+            </li>
+            <li>
+              <a href="profil.php"><img src="img/navbarAccount.svg" alt="" /></a>
+            </li>
           </ul>
         </div>
       </nav>

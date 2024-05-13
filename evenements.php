@@ -8,18 +8,18 @@
   </head>
   <body>
     <nav>
-      <img src="./img/logonavbar.png" alt="" />
+      <img src="img/logonavbar.png" alt="" />
       <ul class="desktop_menu">
-        <li><a href="/index.php">HOME</a></li>
-        <li><a href="/emploi.html">EMPLOIS</a></li>
-        <li><a href="/Annuaire.html">ANNUAIRE</a></li>
-        <li><a href="/HistoiredeLiut.html">HISTOIRE DE L'IUT</a></li>
+        <li><a href="index.php">HOME</a></li>
+        <li><a href="evenements.php">EVENEMENTS</a></li>
+        <li><a href="Annuaire.html">ANNUAIRE</a></li>
+        <li><a href="HistoiredeLiut.html">HISTOIRE DE L'IUT</a></li>
 
         <li>
           <a href="contact.html"><button>CONTACT</button></a>
         </li>
         <li>
-          <a href="profil.php"><img src="./img/navbarAccount.svg" alt="" /></a>
+          <a href="profil.php"><img src="img/navbarAccount.svg" alt="" /></a>
         </li>
       </ul>
       <div class="container nav-container">
@@ -36,14 +36,14 @@
           <li><a href="index.php">HOME</a></li>
           <li><a href="#">EMPLOIS</a></li>
           <li><a href="annuaire.html">ANNUAIRE</a></li>
-          <li><a href="/HistoiredeLiut.html">HISTOIRE DE L'IUT</a></li>
+          <li><a href="HistoiredeLiut.html">HISTOIRE DE L'IUT</a></li>
 
           <li>
             <a href="contact.html"><button>CONTACT</button></a>
           </li>
           <li>
             <a href="profil.php"
-              ><img src="./img/navbarAccount.svg" alt=""
+              ><img src="img/navbarAccount.svg" alt=""
             /></a>
           </li>
         </ul>
@@ -100,20 +100,20 @@
         <h3>Social Media</h3>
         <ul>
           <li>
-            <a href=""><img src="./img/IconTwitter.svg" alt="" />Twitter</a>
+            <a href=""><img src="img/IconTwitter.svg" alt="" />Twitter</a>
           </li>
           <li>
-            <a href=""><img src="./img/IconYoutube.svg" alt="" />Youtube</a>
+            <a href=""><img src="img/IconYoutube.svg" alt="" />Youtube</a>
           </li>
           <li>
-            <a href=""><img src="./img/IconFacebook.svg" alt="" />Facebook</a>
+            <a href=""><img src="img/IconFacebook.svg" alt="" />Facebook</a>
           </li>
 
           <li>
-            <a href=""><img src="./img/IconLinkedin.svg" alt="" />Linkedin</a>
+            <a href=""><img src="img/IconLinkedin.svg" alt="" />Linkedin</a>
           </li>
           <li>
-            <a href=""><img src="./img/IconInstagram.svg" alt="" />Instagram</a>
+            <a href=""><img src="img/IconInstagram.svg" alt="" />Instagram</a>
           </li>
         </ul>
       </div>
@@ -136,6 +136,6 @@
         </ul>
       </div>
     </footer>
-    <script src="../main.js"></script>
+    <script src=".main.js"></script>
   </body>
 </html>
