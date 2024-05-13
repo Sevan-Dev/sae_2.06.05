@@ -17,7 +17,7 @@
     <div class="container" id="container">
         <div class="form-container sign-up">
             <form method="post" action="php/traitement_creation.php">
-                <h1>Create Account</h1>
+                <h1>Créer un compte</h1>
                 <input type="text" placeholder="Nom" name="nom">
                 <input type="text" placeholder="Prenom" name="prenom">
                 <input type="email" placeholder="Email" name="email">
@@ -27,7 +27,7 @@
         </div>
         <div class="form-container sign-in">
             <form method="post" action="php/traitement_connexion.php">
-                <h1>Sign In</h1>
+                <h1>Connexion</h1>
                     <input type="email" placeholder="Email" name="email">
                     <input type="password" placeholder="Password" name="mdp">
                 <button>Connexion</button>

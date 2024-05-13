@@ -57,57 +57,37 @@
         <h2 class="section_title">Découvrez les évenements à l'IUT</h2>
       </div>
       <div class="offre_container">
-        <div class="emploi_carte">
-          <div class="date_titre">
-            <div class="date">
-              <h1>mer.</h1>
-              <h2>06</h2>
-            </div>
-            <div class="titre">
-              <h2>TitreDeLevent</h2>
-              <h3>20h30</h3>
-            </div>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-            inventore quaerat excepturi. Ratione labore deserunt numquam eos
-            eius provident eligendi similique
-          </p>
-        </div>
-        <div class="emploi_carte">
-          <div class="date_titre">
-            <div class="date">
-              <h1>mer.</h1>
-              <h2>06</h2>
-            </div>
-            <div class="titre">
-              <h2>TitreDeLevent</h2>
-              <h3>20h30</h3>
-            </div>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-            inventore quaerat excepturi. Ratione labore deserunt numquam eos
-            eius provident eligendi similique
-          </p>
-        </div>
-        <div class="emploi_carte">
-          <div class="date_titre">
-            <div class="date">
-              <h1>mer.</h1>
-              <h2>06</h2>
-            </div>
-            <div class="titre">
-              <h2>TitreDeLevent</h2>
-              <h3>20h30</h3>
-            </div>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-            inventore quaerat excepturi. Ratione labore deserunt numquam eos
-            eius provident eligendi similique
-          </p>
-        </div>
+
+        <?php
+          session_start();
+          include("php/db_connect.php");
+
+          $requete="SELECT evenements.titre, evenements.date, evenements.heure, evenements.description FROM evenements ORDER BY evenements.date ASC"; 
+          $result=$db->query($requete);
+          while($row = $result->fetch_assoc()){
+            $titre=$row['titre'];
+            $date=explode("-", $row['date']);
+            $jour=date("l", mktime(0, 0, 0, intval($date[1]), $date[2], $date[0]));
+            $heure=explode(":", $row['heure']);
+            $description=$row['description'];
+
+            echo("<div class='emploi_carte'>
+                    <div class='date_titre'>
+                      <div class='date'>
+                        <h1>$jour</h1>
+                        <h2>$date[2]</h2>
+                      </div>
+                      <div class='titre'>
+                        <h2>$titre</h2>
+                        <h3>$heure[0]:$heure[1]</h3>
+                      </div>
+                    </div>
+                    <p>$description</p>
+                  </div>"
+            );
+          };
+        ?>
+
       </div>
     </section>
 

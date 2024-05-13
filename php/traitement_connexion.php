@@ -5,16 +5,15 @@
 
 	if(!empty($_POST['email'] and $_POST['mdp'])){
 		$email = $_POST['email'];
-		$mdp = $_POST['mdp'];
-
-        $_SESSION['user_email'] = $email;
+		$mdp = $_POST['mdp'];        
 		
 		$requete="SELECT utilisateurs.mdp FROM utilisateurs WHERE utilisateurs.email='$email'";
 		$result=$db->query($requete);
 	
 
 		$row = $result->fetch_assoc();
-        if(isset($row['email'])) {
+        if($row['mdp'] == $mdp) {
+            $_SESSION['user_email'] = $email;
 			header("Location: ../index.php");
 		}
 		else{
