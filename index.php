@@ -15,12 +15,11 @@
     <nav>
       <img src="./img/logonavbar.png" alt="" />
       <ul class="desktop_menu">
-        <li><a href="">HOME</a></li>
-        <li><a href="">ACTUS</a></li>
-        <li><a href="">EMPLOIS</a></li>
-        <li><a href="">ANNUAIRE</a></li>
+        <li><a href="#">HOME</a></li>
+        <li><a href="emploi.html">EMPLOIS</a></li>
+        <li><a href="annuaire.html">ANNUAIRE</a></li>
         <li>
-          <a href=""><button>CONTACT</button></a>
+          <a href="contact.html"><button>CONTACT</button></a>
         </li>
         <li>
           <a href="profil.php"><img src="./img/navbarAccount.svg" alt="" /></a>
@@ -37,15 +36,14 @@
 
       <div class="mobile_menu">
         <ul>
-          <li><a href="">HOME</a></li>
-          <li><a href="">ACTUS</a></li>
-          <li><a href="">EMPLOIS</a></li>
-          <li><a href="">ANNUAIRE</a></li>
+          <li><a href="#">HOME</a></li>
+          <li><a href="emploi.html">EMPLOIS</a></li>
+          <li><a href="annuaire.html">ANNUAIRE</a></li>
           <li>
-            <a href=""><button class="green-btn">CONTACT</button></a>
+            <a href="contact.html"><button class="green-btn">CONTACT</button></a>
           </li>
           <li>
-            <a href=""><img src="./img/navbarAccount.svg" alt="" /></a>
+            <a href="profil.php"><img src="./img/navbarAccount.svg" alt="" /></a>
           </li>
         </ul>
       </div>

@@ -43,10 +43,10 @@
           <li><a href="emploi.html">EMPLOIS</a></li>
           <li><a href="annuaire.html">ANNUAIRE</a></li>
           <li>
-            <a href=""><button>CONTACT</button></a>
+            <a href="contact.html"><button>CONTACT</button></a>
           </li>
           <li>
-            <a href=""><img src="./img/navbarAccount.svg" alt="" /></a>
+            <a href="#"><img src="./img/navbarAccount.svg" alt="" /></a>
           </li>
         </ul>
         <div class="container nav-container">
@@ -64,10 +64,10 @@
             <li><a href="emploi.html">EMPLOIS</a></li>
             <li><a href="annuaire.html">ANNUAIRE</a></li>
             <li>
-              <a href=""><button>CONTACT</button></a>
+              <a href="contact.html"><button>CONTACT</button></a>
             </li>
             <li>
-              <a href=""><img src="./img/navbarAccount.svg" alt="" /></a>
+              <a href="#"><img src="./img/navbarAccount.svg" alt="" /></a>
             </li>
           </ul>
         </div>
