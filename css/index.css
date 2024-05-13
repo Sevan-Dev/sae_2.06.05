@@ -1,11 +1,14 @@
 /* ------------------------------------------------------------------------------------------- */
 /* Navbar */
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+
 
 * {
   padding: 0;
   margin: 0;
-  font-family:  Poppins;
+  font-family: "Poppins", sans-serif;
+
 }
 
 body {
@@ -44,6 +47,7 @@ nav ul li a {
   color: black;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+
 }
 
 nav button {
@@ -136,53 +140,48 @@ nav button {
 /* Main */
 
 /* Hero Section */
-section.hero_section {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("../img/iut.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  gap: 50px;
-  position: relative;
-  padding: 0;
+.hero {
+  width: 100%;
+  height: 91vh;
 }
-
-.filter {
-  position: absolute;
+.hero img {
   width: 100%;
   height: 100%;
-  background-color: #0000005f;
-  z-index: 1;
+  object-fit: cover;
+  object-position: center;
 }
-
-.title_container,
-.text-container,
-.buttons-container {
-  z-index: 2;
+.parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/HistoiredeLiutHeroImg.png");
+  height: 91vh;
 }
-
-h1.title {
-  font-family: "DM Serif Display";
-  font-size: 48px;
-  font-weight:500;
-  width: 600px;
+.hero h1 {
+  font-family: "DM Serif Display", serif;
+  color: white;
+  font-size: 4.5rem;
+  position: absolute;
+  font-weight: 400;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  text-transform: capitalize;
+  width: 60%;
 }
-
-.hero_section p.description {
-  font-family: Poppins;
-  font-size: 16px;
+.hero p {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+  font-weight: 400;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  width: 800px;
+  width: 60%;
 }
-
 .buttons-container {
   display: flex;
   gap: 20px;
@@ -220,13 +219,13 @@ section.annuaire_setion .left {
   width: 60%;
   display: flex;
   flex-direction: column;
-  gap: 30px
+  gap: 30px;
 }
 
 h2 {
   font-family: "DM Serif Display";
   font-weight: 300;
-  font-size: 32px
+  font-size: 32px;
 }
 
 section.annuaire_setion .right {
@@ -258,7 +257,7 @@ section.emplois_section .left {
 }
 
 section.emplois_section .left button {
-  margin-right:  auto;
+  margin-right: auto;
 }
 
 section.emplois_section .right {
@@ -334,7 +333,7 @@ h2.green_underlined {
 .form_section .text_container {
   display: flex;
   flex-direction: column;
-  gap: 20px
+  gap: 20px;
 }
 
 .form_section label {
@@ -343,7 +342,7 @@ h2.green_underlined {
 }
 
 .form_section input {
-  width: calc(100vw/4);
+  width: calc(100vw / 4);
   outline: none;
   padding: 3px 5px;
   border: none;
@@ -352,7 +351,7 @@ h2.green_underlined {
 }
 
 .message_container {
-  width: 100%
+  width: 100%;
 }
 
 .form_section textarea {
@@ -374,7 +373,6 @@ h2.green_underlined {
 /* Footer */
 
 footer {
-  width: 100%;
   padding: 6rem 0;
   background-color: #464646;
   display: flex;
@@ -411,14 +409,27 @@ footer a {
     margin: 1.2rem 4rem;
   }
   section {
-  padding: 6rem 4rem;
+    padding: 6rem 4rem;
   }
   nav ul {
     gap: 2rem;
   }
+  .hero h1 {
+    font-size: 4rem;
+  }
 }
 
 @media screen and (max-width: 1000px) {
+  .hero h1 {
+    font-size: 3rem;
+    width: 90%;
+    top: 40%;
+  }
+
+  .hero p {
+    width: 90%;
+    top:65%;
+  }
   .nav-container {
     display: block;
   }
@@ -428,15 +439,53 @@ footer a {
   nav .desktop_menu {
     display: none;
   }
-  footer {
-    padding: 6rem 0;
-  }
+
 }
 
 @media screen and (max-width: 800px) {
   footer {
     flex-direction: column;
     gap: 4rem;
-    padding: 4rem 0;
+    padding-left: 2rem;
+  }
+  section {
+    padding: 100px 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  section.annuaire_setion .right {
+    width: 100%;
+  }
+  section.annuaire_setion .left {
+    order: 1;
+    width: 100%;
+  }
+  section.emplois_section .right {
+    width: 100%;
+  }
+  section.emplois_section .left {
+    order: 1;
+    width: 100%;
+  }
+  section.histoire_section .right {
+    width: 100%;
+    order: 1;
+
+  }
+  section.histoire_section .left {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .green_underlined::before{
+    display: none;
+  }
+}
+@media screen and (max-width: 580px) {
+  .first_description_form{
+    flex-direction: column;
+  }
+  .form_section input {
+    width: 100%
   }
 }
