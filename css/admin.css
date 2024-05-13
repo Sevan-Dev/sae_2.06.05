@@ -182,7 +182,7 @@ background: linear-gradient(47deg, rgba(47,122,29,1) 0%, rgba(1,241,39,1) 100%);
     font-weight: 500;
   }
 
-  form {
+  .btn-deco {
     margin-left: auto;
   }
 
@@ -191,6 +191,11 @@ background: linear-gradient(47deg, rgba(47,122,29,1) 0%, rgba(1,241,39,1) 100%);
     background: white;
     color: #29b627;
 
+  }
+
+  .green-btn {
+    color: white;
+    background-color: #29b627;
   }
 
   .ctn {

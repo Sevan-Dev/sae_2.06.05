@@ -2,8 +2,26 @@
     session_start();
     include("php/db_connect.php");
     if (!isset($_SESSION['user_email'])){
-        header('Location: login.php');
-        exit;
+      header('Location: login.php');
+      exit;
+    }
+
+    $requete="SELECT utilisateurs.nom, utilisateurs.prenom FROM utilisateurs WHERE utilisateurs.email='$_SESSION[user_email]'"; 
+    $result=$db->query($requete);
+		while($row = $result->fetch_assoc()){
+      $nom=$row['nom'];
+      $prenom=$row['prenom'];
+      
+      $_SESSION['nom'] = $nom;
+      $_SESSION['prenom'] = $prenom;
+    };
+
+    $requete="SELECT utilisateurs.no_type_compte FROM utilisateurs WHERE utilisateurs.email='$_SESSION[user_email]'"; 
+    $result=$db->query($requete);
+    $row = $result->fetch_assoc();
+
+    if ($row['no_type_compte'] == '1'){
+      header('Location: profil_admin.php');
     }
 
     $requete="SELECT details.description FROM details WHERE details.email='$_SESSION[user_email]' AND details.type_detail='metier'"; 
@@ -15,13 +33,6 @@
     $result=$db->query($requete);
 		$row = $result->fetch_assoc();
 		$biographie=$row['description'];
-
-    $requete="SELECT utilisateurs.nom, utilisateurs.prenom FROM utilisateurs WHERE utilisateurs.email='$_SESSION[user_email]'"; 
-    $result=$db->query($requete);
-		while($row = $result->fetch_assoc()){
-      $nom=$row['nom'];
-      $prenom=$row['prenom'];
-    };
 ?>
 
 <!DOCTYPE html>
@@ -77,7 +88,7 @@
         <div class="main_profil_container">
             <div class="profil_picture"></div>
             <div class="name_container">
-                <h1 class="name"><?php echo("$nom $prenom") ?></h1>
+                <h1 class="name"><?php echo("$prenom $nom") ?></h1>
                 <p class="email"><?php echo($_SESSION['user_email']) ?></p>
             </div>
             <div class="button_container">
