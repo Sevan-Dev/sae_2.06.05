@@ -247,12 +247,12 @@ section.annuaire_setion .img_container {
 section.emplois_section {
   gap: 50px;
 }
+
 section.emplois_section .left {
   display: flex;
   flex-direction: column;
   width: 55%;
   gap: 20px;
-  align-items: center;
   justify-content: center;
 }
 

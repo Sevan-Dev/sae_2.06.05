@@ -129,26 +129,34 @@ nav button {
 
 /* ------------------------------------------------------------- */
 
-section.hero_section {
-  width: 100vw;
+.hero {
+  width: 100%;
   height: 91vh;
-  background-image: url("../img/evenementHero.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-
-h1.title {
-  font-size: 48px;
-  font-weight: 500;
-  font-family: "DM Serif Display";
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.parallax{
+  background-attachment: fixed;
+background-size: cover;
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("../img/evenementHero.jpg");
+height: 91vh;
+}
+.hero h1 {
+  font-family: "DM Serif Display", serif;
   color: white;
-  width: 600px;
+  font-size: 4rem;
+  position: absolute;
+  font-weight: 400;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  text-transform: capitalize;
 }
 
 /* carte emplois */
