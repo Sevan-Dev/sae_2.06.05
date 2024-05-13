@@ -158,11 +158,17 @@ section {
   padding: 4rem 0;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 4rem;
-  
+  margin: 50px 200px 0 200px;
+}
+section img {
+  width: 40%;
+  height: 400px;
+  object-fit: cover;
 }
 section div {
-  width: 40%;
+  width: 60%;
 }
 section div h3 {
   font-family: "DM Serif Display", serif;
@@ -174,6 +180,7 @@ section div p {
   margin-top: 1rem;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  text-align: justify;
 }
 .conclusion {
   display: flex;
