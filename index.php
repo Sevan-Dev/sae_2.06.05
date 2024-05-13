@@ -15,12 +15,18 @@
     <nav>
       <img src="./img/logonavbar.png" alt="" />
       <ul class="desktop_menu">
+<<<<<<< HEAD
         <li><a href="/index.php">HOME</a></li>
         <li><a href="/emploi.html">EMPLOIS</a></li>
         <li><a href="/Annuaire.html">ANNUAIRE</a></li>
         <li><a href="/HistoiredeLiut.html">HISTOIRE DE L'IUT</a></li>
+=======
+        <li><a href="#">HOME</a></li>
+        <li><a href="emploi.html">EMPLOIS</a></li>
+        <li><a href="annuaire.html">ANNUAIRE</a></li>
+>>>>>>> 4aacfe0fa1ff6f87b2b03e70059a65615ce52ae8
         <li>
-          <a href=""><button>CONTACT</button></a>
+          <a href="contact.html"><button>CONTACT</button></a>
         </li>
         <li>
           <a href=""><img src="./img/navbarAccount.svg" alt="" /></a>
@@ -37,15 +43,14 @@
 
       <div class="mobile_menu">
         <ul>
-          <li><a href="">HOME</a></li>
-          <li><a href="">ACTUS</a></li>
-          <li><a href="">EMPLOIS</a></li>
-          <li><a href="">ANNUAIRE</a></li>
+          <li><a href="#">HOME</a></li>
+          <li><a href="emploi.html">EMPLOIS</a></li>
+          <li><a href="annuaire.html">ANNUAIRE</a></li>
           <li>
-            <a href=""><button class="green-btn">CONTACT</button></a>
+            <a href="contact.html"><button class="green-btn">CONTACT</button></a>
           </li>
           <li>
-            <a href=""><img src="./img/navbarAccount.svg" alt="" /></a>
+            <a href="profil.php"><img src="./img/navbarAccount.svg" alt="" /></a>
           </li>
         </ul>
       </div>
