@@ -68,7 +68,7 @@ nav button {
   object-position: center;
 }
 .parallax{
-    background-attachment: fixed;
+  background-attachment: fixed;
 background-size: cover;
 background-position: center; 
 background-repeat: no-repeat;
@@ -228,6 +228,10 @@ footer a {
   nav {
     margin: 1.2rem 4rem;
   }
+  section{
+    margin: 50px 50px 0 50px;
+
+  }
   nav ul {
     gap: 2rem;
   }
@@ -237,6 +241,9 @@ footer a {
   }
 }
 @media screen and (max-width: 1000px) {
+  section {
+    margin: 50px 10px 0 10px;
+  }
   .nav-container {
     display: block;
   }
@@ -259,6 +266,7 @@ footer a {
   section img{
     order: 1;
     padding: 0 2rem;
+    width: 100%;
 
   }
   .conclusion p{

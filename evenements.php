@@ -36,6 +36,8 @@
           <li><a href="index.php">HOME</a></li>
           <li><a href="#">EMPLOIS</a></li>
           <li><a href="annuaire.html">ANNUAIRE</a></li>
+          <li><a href="/HistoiredeLiut.html">HISTOIRE DE L'IUT</a></li>
+
           <li>
             <a href="contact.html"><button>CONTACT</button></a>
           </li>
