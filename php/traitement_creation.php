@@ -32,6 +32,16 @@
             VALUES ('$email', 'biographie', '');";
 		    $result=$db->query($requete);
 
+            $requete="SELECT utilisateurs.nom, utilisateurs.prenom FROM utilisateurs WHERE utilisateurs.email='$_SESSION[user_email]'"; 
+            $result=$db->query($requete);
+		    while($row = $result->fetch_assoc()){
+                $nom=$row['nom'];
+                $prenom=$row['prenom'];
+                
+                $_SESSION['nom'] = $nom;
+                $_SESSION['prenom'] = $prenom;
+            };
+
 			header("Location: ../index.php");
 		}
 

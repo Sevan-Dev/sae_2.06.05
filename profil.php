@@ -6,16 +6,6 @@
       exit;
     }
 
-    $requete="SELECT utilisateurs.nom, utilisateurs.prenom FROM utilisateurs WHERE utilisateurs.email='$_SESSION[user_email]'"; 
-    $result=$db->query($requete);
-		while($row = $result->fetch_assoc()){
-      $nom=$row['nom'];
-      $prenom=$row['prenom'];
-      
-      $_SESSION['nom'] = $nom;
-      $_SESSION['prenom'] = $prenom;
-    };
-
     $requete="SELECT utilisateurs.no_type_compte FROM utilisateurs WHERE utilisateurs.email='$_SESSION[user_email]'"; 
     $result=$db->query($requete);
     $row = $result->fetch_assoc();
