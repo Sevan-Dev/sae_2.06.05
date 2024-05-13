@@ -1,11 +1,8 @@
-<!DOCTYPE php>
 <?php
     session_start();
-
     include("php/db_connect.php");
-
-    if (!isset($_SESSION['user_email'])) {
-      header("Location: login.php");
+    if (!isset($_SESSION['user_email'])){
+        header('Location: login.php');
         exit;
     }
 
@@ -39,30 +36,18 @@
     <nav>
         <img src="./img/logonavbar.png" alt="" />
         <ul class="desktop_menu">
-<<<<<<< HEAD
         <li><a href="/index.php">HOME</a></li>
         <li><a href="/emploi.html">EMPLOIS</a></li>
         <li><a href="/Annuaire.html">ANNUAIRE</a></li>
         <li><a href="/HistoiredeLiut.html">HISTOIRE DE L'IUT</a></li>
         <li>
-          <a href=""><button>CONTACT</button></a>
-        </li>
-        <li>
-          <a href=""><img src="./img/navbarAccount.svg" alt="" /></a>
-        </li>
-      </ul>
-=======
-          <li><a href="index.php">HOME</a></li>
-          <li><a href="emploi.html">EMPLOIS</a></li>
-          <li><a href="annuaire.html">ANNUAIRE</a></li>
-          <li>
             <a href="contact.html"><button>CONTACT</button></a>
           </li>
           <li>
             <a href="#"><img src="./img/navbarAccount.svg" alt="" /></a>
           </li>
-        </ul>
->>>>>>> 4aacfe0fa1ff6f87b2b03e70059a65615ce52ae8
+      </ul>
+
         <div class="container nav-container">
           <input class="checkbox" type="checkbox" name="" id="" />
           <div class="hamburger-lines">

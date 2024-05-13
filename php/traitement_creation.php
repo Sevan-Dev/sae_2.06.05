@@ -1,4 +1,3 @@
-<!DOCTYPE php>
 <?php
     session_start();
 
@@ -14,10 +13,10 @@
 
         $requete="SELECT utilisateurs.email FROM utilisateurs WHERE utilisateurs.email='$email'";
 		$result=$db->query($requete);
-	
-
+		
 		$row = $result->fetch_assoc();
-        if($row['email']==$email){
+
+        if(isset($row['email'])) {
 			$error= "Email déjà enregistrer";
 		}
 		else{

@@ -1,14 +1,18 @@
-<!DOCTYPE php>
 <?php
     session_start();
 
     include("db_connect.php");
 
-    $requete="UPDATE `details` SET `description` = '$_POST[metier]' WHERE `details`.`email` = '$_SESSION[user_email]' AND `details`.`type_detail` = 'metier';"; 
-    $result=$db->query($requete);
+    // Mise à jour de 'metier'
+    $requete = $db->prepare("UPDATE `details` SET `description` = ? WHERE `details`.`email` = ? AND `details`.`type_detail` = 'metier'");
+    $requete->bind_param("ss", $_POST['metier'], $_SESSION['user_email']);
+    $requete->execute();
 
-    $requete="UPDATE `details` SET `description` = '$_POST[description]' WHERE `details`.`email` = '$_SESSION[user_email]' AND `details`.`type_detail` = 'biographie';"; 
-    $result=$db->query($requete);
+    // Mise à jour de 'biographie'
+    $requete = $db->prepare("UPDATE `details` SET `description` = ? WHERE `details`.`email` = ? AND `details`.`type_detail` = 'biographie'");
+    $requete->bind_param("ss", $_POST['description'], $_SESSION['user_email']);
+    $requete->execute();
+
 
     header("Location: ../profil.php");
 ?>

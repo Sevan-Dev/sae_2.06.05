@@ -1,10 +1,8 @@
-<?php 
+<?php
 	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbname = "deptinfo";
-	// Etablir la connexion à la base de donnée
+	$username = "id22160690_root";
+	$password = "Root-205";
+	$dbname = "id22160690_deptinfo";
 	$db = mysqli_connect($servername, $username, $password, $dbname)
-	or die ("connexion impossible")
+	or die ("connexion impossible");
 ?>
-

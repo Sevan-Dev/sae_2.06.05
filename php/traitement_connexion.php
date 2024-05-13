@@ -1,4 +1,3 @@
-<!DOCTYPE php>
 <?php
     session_start();
 
@@ -15,7 +14,7 @@
 	
 
 		$row = $result->fetch_assoc();
-		if($row['mdp']==$mdp){
+        if(isset($row['email'])) {
 			header("Location: ../index.php");
 		}
 		else{
