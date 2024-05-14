@@ -13,7 +13,7 @@
     <nav>
       <img src="img/logonavbar.png" alt="" />
       <ul class="desktop_menu">
-        <li><a href="index.php">ACCEUIL</a></li>
+        <li><a href="index.php">ACCUEIL</a></li>
         <li><a href="evenements.php">EVENEMENTS</a></li>
         <li><a href="Annuaire.html">ANNUAIRE</a></li>
         <li><a href="HistoiredeLiut.html">HISTOIRE DE L'IUT</a></li>
@@ -36,7 +36,7 @@
 
       <div class="mobile_menu">
         <ul>
-          <li><a href="index.php">ACCEUIL</a></li>
+          <li><a href="index.php">ACCUEIL</a></li>
           <li><a href="#">EMPLOIS</a></li>
           <li><a href="annuaire.html">ANNUAIRE</a></li>
           <li><a href="HistoiredeLiut.html">HISTOIRE DE L'IUT</a></li>
