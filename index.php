@@ -1,4 +1,3 @@
-<!DOCTYPE php>
 <?php
     session_start();
     include("php/db_connect.php");
@@ -17,7 +16,7 @@
       <img src="img/logonavbar.png" alt="" />
       <ul class="desktop_menu">
 
-        <li><a href="index.php">HOME</a></li>
+        <li><a href="index.php">ACCEUIL</a></li>
         <li><a href="evenements.php">EVENEMENTS</a></li>
         <li><a href="Annuaire.html">ANNUAIRE</a></li>
         <li><a href="HistoiredeLiut.html">HISTOIRE DE L'IUT</a></li>
@@ -40,7 +39,7 @@
 
       <div class="mobile_menu">
         <ul>
-          <li><a href="index.php">HOME</a></li>
+          <li><a href="index.php">ACCEUIL</a></li>
           <li><a href="evenements.php">EVENEMENTS</a></li>
           <li><a href="Annuaire.html">ANNUAIRE</a></li>
           <li><a href="HistoiredeLiut.html">HISTOIRE DE L'IUT</a></li>
@@ -57,7 +56,7 @@
       <div class="hero__container">
 
         <h1>
-          Bienvenu Sur Notre Plateforme D'anciens Élèves
+          Bienvenue Sur Notre Plateforme D'anciens Élèves
         </h1>
         <p class="description">
           "Rejoignez notre communauté dynamique d'anciens élèves, où les souvenirs se mêlent à de nouvelles opportunités. Connectez-vous avec d'anciens camarades, découvrez des histoires inspirantes et explorez les chemins variés que nos anciens ont empruntés. Ensemble, nous façonnons l'avenir, enrichis par notre passé commun. 
@@ -68,7 +67,7 @@
 
     <section class="annuaire_setion">
       <div class="left">
-        <h2>Retrouvez vos anciens camarades d'école !</h2>
+        <h2>Retrouvez vos anciens camarades de promo !</h2>
         <p class="description">
           Plongez dans la nostalgie et renouez avec vos anciens amis de
           promotion grâce à notre fonction de recherche conviviale. Explorez

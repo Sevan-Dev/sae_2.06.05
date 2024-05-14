@@ -1,5 +1,16 @@
 <?php
     include("db_connect.php");
+    session_start();
+    
+    $requete="SELECT details.description FROM details WHERE details.email='$_SESSION[user_email]' AND details.type_detail='metier'"; 
+    $result=$db->query($requete);
+		$row = $result->fetch_assoc();
+		$metier=$row['description'];
+
+    $requete="SELECT details.description FROM details WHERE details.email='$_SESSION[user_email]' AND details.type_detail='biographie'"; 
+    $result=$db->query($requete);
+		$row = $result->fetch_assoc();
+		$biographie=$row['description'];
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +25,7 @@
     <nav>
         <img src="../img/logonavbar.png" alt="" />
         <ul class="desktop_menu">
-          <li><a href="">HOME</a></li>
+          <li><a href="">ACCEUIL</a></li>
           <li><a href="">ACTUS</a></li>
           <li><a href="">EMPLOIS</a></li>
           <li><a href="">ANNUAIRE</a></li>
@@ -36,7 +47,7 @@
   
         <div class="mobile_menu">
           <ul>
-            <li><a href="">HOME</a></li>
+            <li><a href="">ACCEUIL</a></li>
             <li><a href="">ACTUS</a></li>
             <li><a href="">EMPLOIS</a></li>
             <li><a href="">ANNUAIRE</a></li>
@@ -65,11 +76,11 @@
             </div>
             <div class="metier_container">
                 <h2 class="meiter_title">Votre métier</h2>
-                <input type="text" name="metier" id="metier" class="metier_input">
+                <input type="text" name="metier" id="metier" class="metier_input" value="<?php echo($metier); ?>">
             </div>
             <div class="description_container">
                 <h2 class="biographie">Bigraphie</h2>
-                <textarea name="description" id="description_area"></textarea>
+                <textarea name="description" id="description_area"><?php echo($biographie); ?></textarea>
             </div>
         </form>
       </section>

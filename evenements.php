@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,7 +13,7 @@
     <nav>
       <img src="img/logonavbar.png" alt="" />
       <ul class="desktop_menu">
-        <li><a href="index.php">HOME</a></li>
+        <li><a href="index.php">ACCEUIL</a></li>
         <li><a href="evenements.php">EVENEMENTS</a></li>
         <li><a href="Annuaire.html">ANNUAIRE</a></li>
         <li><a href="HistoiredeLiut.html">HISTOIRE DE L'IUT</a></li>
@@ -33,7 +36,7 @@
 
       <div class="mobile_menu">
         <ul>
-          <li><a href="index.php">HOME</a></li>
+          <li><a href="index.php">ACCEUIL</a></li>
           <li><a href="#">EMPLOIS</a></li>
           <li><a href="annuaire.html">ANNUAIRE</a></li>
           <li><a href="HistoiredeLiut.html">HISTOIRE DE L'IUT</a></li>
@@ -51,47 +54,41 @@
     </nav>
 
     <section class="hero">
-      <h1 class="title">Les évenements à l'IUT</h1>
+      <h1 class="title">Les événements à l'IUT</h1>
       <div class="parallax"></div>
-
     </section>
 
     <section class="offres_container">
       <div class="en-tete">
-        <h2 class="section_title">Découvrez les évenements à l'IUT</h2>
+        <h2 class="section_title">Découvrez les événements à l'IUT</h2>
       </div>
       <div class="offre_container">
+<?php
+    include("php/db_connect.php");
+    setlocale(LC_TIME, 'fr_FR.UTF-8');
+    $requete="SELECT evenements.titre, evenements.date, evenements.heure, evenements.description FROM evenements ORDER BY evenements.date ASC";
+    $result=$db->query($requete);
+    while($row = $result->fetch_assoc()){
+        $titre=$row['titre'];
+        $date=explode("-", $row['date']);
+        $jour=strftime("%a", mktime(0, 0, 0, intval($date[1]), $date[2], $date[0]));
+        $mois=strftime("%b", mktime(0, 0, 0, intval($date[1]), $date[2], $date[0]));
+        $heure=explode(":", $row['heure']);
+        $description=$row['description'];
 
-        <?php
-          session_start();
-          include("php/db_connect.php");
-
-          $requete="SELECT evenements.titre, evenements.date, evenements.heure, evenements.description FROM evenements ORDER BY evenements.date ASC"; 
-          $result=$db->query($requete);
-          while($row = $result->fetch_assoc()){
-            $titre=$row['titre'];
-            $date=explode("-", $row['date']);
-            $jour=date("l", mktime(0, 0, 0, intval($date[1]), $date[2], $date[0]));
-            $heure=explode(":", $row['heure']);
-            $description=$row['description'];
-
-            echo("<div class='emploi_carte'>
-                    <div class='date_titre'>
-                      <div class='date'>
+        echo("<div class='emploi_carte'>
+                <div class='date_titre'>
+                    <div class='date'>
                         <h1>$jour</h1>
-                        <h2>$date[2]</h2>
-                      </div>
-                      <div class='titre'>
+                        <h2>$date[1] $mois</h2>
+                    </div>
+                    <div class='titre'>
                         <h2>$titre</h2>
                         <h3>$heure[0]:$heure[1]</h3>
-                      </div>
                     </div>
-                    <p>$description</p>
-                  </div>"
-            );
-          };
-        ?>
-
+                </div>
+                <p>$description</p>
+            </div>");};?>
       </div>
     </section>
 

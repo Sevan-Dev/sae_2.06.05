@@ -37,9 +37,9 @@
 <nav>
         <img src="img/logonavbar.png" alt="" />
         <ul class="desktop_menu">
-          <li><a href="index.php">HOME</a></li>
+          <li><a href="index.php">ACCEUIL</a></li>
           <li><a href="evenements.php">EVENEMENTS</a></li>
-          <li><a href="annuaire.html">ANNUAIRE</a></li>
+          <li><a href="Annuaire.html">ANNUAIRE</a></li>
           <li><a href="HistoiredeLiut.html">HISTOIRE DE L'IUT</a></li>
           <li>
             <a href="#"><button>CONTACT</button></a>
@@ -59,7 +59,7 @@
   
         <div class="mobile_menu">
           <ul>
-            <li><a href="index.php">HOME</a></li>
+            <li><a href="index.php">ACCEUIL</a></li>
             <li><a href="evenements.php">EVENEMENTS</a></li>
             <li><a href="annuaire.html">ANNUAIRE</a></li>
             <li><a href="HistoiredeLiut.html">HISTOIRE DE L'IUT</a></li>
@@ -78,7 +78,7 @@
         <div class="main_profil_container">
             <div class="profil_picture"></div>
             <div class="name_container">
-                <h1 class="name"><?php echo("$prenom $nom") ?></h1>
+                <h1 class="name"><?php echo("$_SESSION[prenom] $_SESSION[nom]") ?></h1>
                 <p class="email"><?php echo($_SESSION['user_email']) ?></p>
             </div>
             <div class="button_container">
