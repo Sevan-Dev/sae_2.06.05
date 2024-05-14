@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+    background-color: #555555;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 10rem;
+    background-color: #1A1A1A;
+  }
+  nav img {
+    cursor: pointer;
+    z-index: 99;
+  
+  }
+  nav ul {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+  }
+  ul li {
+    list-style: none;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #9F9F9F;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  nav button {
+    border: none;
+    padding: 0.7rem 1.3rem;
+    border-radius: 0.4rem;
+    background-color: #004575;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .mobile_menu {
+      transform: translateY(-100%);
+      transition: transform 0.5s ease-in-out;
+      z-index: 10;
+      position: fixed;
+      left: 0;
+      width: 100%;
+      padding: 10rem 0;
+      background-color: #fff; 
+  }
+  
+  .mobile_menu ul{
+      flex-direction: column;
+      text-align: start;
+  }
+
+/* Menu Hamburger */
+
+.nav-container {
+    position: relative;
+    display: none;
+    z-index: 99;
+  }
+  
+  .nav-container .checkbox {
+    display: block;
+    height: 32px;
+    width: 32px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .checkbox{
+      position: relative;
+  }
+  .hamburger-lines{
+      position: absolute;
+      left: 0;
+      top: 0;
+  }
+  .nav-container .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px; 
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .nav-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #0e2431;
+  }
+  
+  .nav-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .nav-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .nav-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+  }
+
+
+  button {
+    border: none;
+    padding: 0.7rem 1.3rem;
+    border-radius: 0.4rem;
+    background-color: #004575;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+  }
+ .main_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.littlecontainer{
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    background-color: #EEEEEE;
+    position: relative;
+}
+.section_header{
+    padding: 6rem 4rem 0 4rem;
+}
+.section_header{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+.section_header h3{
+    font-family: "DM Serif Display", serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.title_souligne{
+    position: relative;
+
+}
+.soulignement{
+
+    top: 1.5rem;
+    left: -0.4rem;
+    width: 108%;
+    height: 40%;
+    position: absolute;
+    background-color: #00457550;
+}
+.section__filtre a{
+    text-decoration: none;
+    font-family: "DM Serif Display", serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.card_container {
+    padding: 6rem 4rem;
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 6rem; 
+}
+
+.card {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem 3rem 2rem;
+    background-color: #00457550;
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card img {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    top: -3.4rem;
+    width: 6.5rem;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.card h3 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.card__details {
+    display: flex;
+    gap: 2rem;
+    font-family: "DM Serif Display", serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #AFAFAF;
+}
+
+.card__description {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #000;
+    text-align: center;
+}
+
+.section__button-container{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+  width: 100%;
+  padding: 6rem 20rem;
+  background-color: #464646;
+  display: flex;
+  justify-content: space-between;
+}
+footer h3 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: 500;
+}
+footer li {
+  list-style: none;
+}
+footer ul {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer img {
+  margin-right: 0.5rem;
+}
+footer a {
+  text-decoration: none;
+  color: #cccccc;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 1480px) {
+  nav {
+    margin: 1.2rem 4rem;
+  }
+  section {
+  padding: 6rem 4rem;
+  }
+  nav ul {
+    gap: 2rem;
+  }
+  footer {
+    padding: 6rem 10rem;
+  }
+
+}
+@media screen and (max-width: 1000px) {
+
+.card{
+    padding: 3rem 1rem 2rem 1rem;
+}
+.section_header h3{
+    font-size: 1.5rem;
+}
+.soulignement {
+    top: 1.2rem;
+}
+  .nav-container {
+    display: block;
+  }
+  section {
+    padding: 6rem 2rem;
+    }
+  nav {
+    margin: 1.2rem 1rem;
+  }
+  nav .desktop_menu {
+    display: none;
+  }
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  footer {
+    padding: 6rem 4rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+    .card_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card_container {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
