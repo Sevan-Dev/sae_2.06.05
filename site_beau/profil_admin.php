@@ -21,11 +21,8 @@
       <nav>
       <a href="./index.html">
         <img src="img/logonavbar.png" alt="" />
-<<<<<<< HEAD:profil_admin.php
       </a>        <ul class="desktop_menu">
-=======
         <ul class="desktop_menu">
->>>>>>> fbf5d908dde64534f5b7419b38ed8ca3a9035540:site_beau/profil_admin.php
           <li><a href="index.php">ACCUEIL</a></li>
           <li><a href="evenements.php">EVENEMENTS</a></li>
           <li><a href="annuaire.html">ANNUAIRE</a></li>

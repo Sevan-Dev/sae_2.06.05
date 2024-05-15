@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Hôte : 127.0.0.1
--- Généré le : lun. 13 mai 2024 à 23:36
--- Version du serveur : 10.4.27-MariaDB
--- Version de PHP : 8.1.12
+-- Hôte : localhost
+-- Généré le : mer. 15 mai 2024 à 13:28
+-- Version du serveur : 10.5.20-MariaDB
+-- Version de PHP : 7.3.33
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : `deptinfo`
+-- Base de données : `id22167009_deptinfo`
 --
 
 -- --------------------------------------------------------
@@ -41,7 +41,9 @@ INSERT INTO `details` (`email`, `type_detail`, `description`) VALUES
 ('joshua.brochot@gmail.com', 'metier', 'Developer / ADMIN'),
 ('joshua.brochot@gmail.com', 'biographie', 'Je suis en BUT info a Metz !'),
 ('michel.morgan@gmail.com', 'metier', 'Secretaire '),
-('michel.morgan@gmail.com', 'biographie', 'Le foot !');
+('michel.morgan@gmail.com', 'biographie', 'Le foot !'),
+('anne.spengler@univ-lorraine.fr', 'metier', 'Enseignant'),
+('anne.spengler@univ-lorraine.fr', 'biographie', 'Renseignements généraux et BUT,');
 
 -- --------------------------------------------------------
 
@@ -61,7 +63,8 @@ CREATE TABLE `evenements` (
 --
 
 INSERT INTO `evenements` (`titre`, `date`, `heure`, `description`) VALUES
-('Portes ouvertes', '2024-09-18', '10:00:00', 'Les portes ouvertes font leur retour le samedis...');
+('Portes ouvertes', '2024-09-18', '10:00:00', 'Les portes ouvertes font leur retour le samedis...'),
+('Soutenance', '2024-05-16', '10:25:00', 'Date de rendu de la SAE et de la soutenance...');
 
 -- --------------------------------------------------------
 
@@ -93,7 +96,6 @@ CREATE TABLE `utilisateurs` (
   `prenom` varchar(20) NOT NULL,
   `email` varchar(50) NOT NULL,
   `mdp` varchar(20) NOT NULL,
-  `annee_prom` date DEFAULT NULL,
   `no_type_compte` int(1) NOT NULL DEFAULT 2
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -101,9 +103,10 @@ CREATE TABLE `utilisateurs` (
 -- Déchargement des données de la table `utilisateurs`
 --
 
-INSERT INTO `utilisateurs` (`nom`, `prenom`, `email`, `mdp`, `annee_prom`, `no_type_compte`) VALUES
-('Brochot', 'Joshua', 'joshua.brochot@gmail.com', 'joshua', '2023-09-02', 1),
-('MORGAN', 'Michel', 'michel.morgan@gmail.com', 'momi', NULL, 2);
+INSERT INTO `utilisateurs` (`nom`, `prenom`, `email`, `mdp`, `no_type_compte`) VALUES
+('Spengler', 'Anne', 'anne.spengler@univ-lorraine.fr', 'deptinfo', 1),
+('Brochot', 'Joshua', 'joshua.brochot@gmail.com', 'joshua', 1),
+('MORGAN', 'Michel', 'michel.morgan@gmail.com', 'momi', 2);
 
 --
 -- Index pour les tables déchargées
