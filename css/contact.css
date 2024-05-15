@@ -192,7 +192,7 @@ section {
     width: 100%
   }
   
-  .form_section textarea {
+  textarea {
     height: 300px;
     outline: none;
     padding: 20px;

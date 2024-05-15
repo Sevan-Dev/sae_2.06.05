@@ -35,9 +35,10 @@
 </head>
 <body>
 <nav>
+<a href="./index.html">
         <img src="img/logonavbar.png" alt="" />
-        <ul class="desktop_menu">
-          <li><a href="index.php">ACCEUIL</a></li>
+      </a>        <ul class="desktop_menu">
+          <li><a href="index.php">ACCUEIL</a></li>
           <li><a href="evenements.php">EVENEMENTS</a></li>
           <li><a href="Annuaire.html">ANNUAIRE</a></li>
           <li><a href="HistoiredeLiut.html">HISTOIRE DE L'IUT</a></li>
@@ -59,7 +60,7 @@
   
         <div class="mobile_menu">
           <ul>
-            <li><a href="index.php">ACCEUIL</a></li>
+            <li><a href="index.php">ACCUEIL</a></li>
             <li><a href="evenements.php">EVENEMENTS</a></li>
             <li><a href="annuaire.html">ANNUAIRE</a></li>
             <li><a href="HistoiredeLiut.html">HISTOIRE DE L'IUT</a></li>
@@ -95,9 +96,10 @@
         <div class="metier_container">
             <h2 class="meiter_title">Votre métier</h2>
             <?php echo($metier) ?>
+            
         </div>
         <div class="description_container">
-            <h2 class="biographie">Bigraphie</h2>
+            <h2 class="biographie">Biographie</h2>
             <?php echo($biographie) ?>
         </div>
 

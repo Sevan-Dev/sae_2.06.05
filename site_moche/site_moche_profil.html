@@ -1,81 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/site_moche_profil.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/site_moche_profil.css" />
     <title>Votre Profil</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <a href=""><img src="./img/Département Informatique.png" alt="" /></a>
-        <ul class="desktop_menu">
+      <a href="#"><img src="./img/Département Informatique.png" alt="" /></a>
+      <ul class="desktop_menu">
+        <li><a href="site_moche_index.html">ACCUEIL</a></li>
+        <li><a href="site_moche_evenements.html">EVENEMENTS</a></li>
+        <li><a href="site_moche_Annuaire.html">ANNUAIRE</a></li>
+        <li><a href="site_moche_HistoiredeLiut.html">HISTOIRE DE L'IUT</a></li>
+        <li>
+          <a href="./site_moche_contact.html"><button>CONTACT</button></a>
+        </li>
+        <li>
+          <a href="site_moche_profil.html"
+            ><img src="./img/Vector.png" alt=""
+          /></a>
+        </li>
+      </ul>
+      <div class="container nav-container">
+        <input class="checkbox" type="checkbox" name="" id="" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+      </div>
+
+      <div class="mobile_menu">
+        <ul>
           <li><a href="site_moche_index.html">ACCUEIL</a></li>
           <li><a href="site_moche_evenements.html">EVENEMENTS</a></li>
           <li><a href="site_moche_Annuaire.html">ANNUAIRE</a></li>
-          <li><a href="site_moche_HistoiredeLiut.html">HISTOIRE DE L'IUT</a></li>
+          <li>
+            <a href="site_moche_HistoiredeLiut.html">HISTOIRE DE L'IUT</a>
+          </li>
           <li>
             <a href="./site_moche_contact.html"><button>CONTACT</button></a>
           </li>
           <li>
-            <a href="site_moche_profil.html"><img src="./img/Vector.png" alt="" /></a>
+            <a href="site_moche_profil.html"
+              ><img src="./img/Vector.png" alt=""
+            /></a>
           </li>
         </ul>
-        <div class="container nav-container">
-          <input class="checkbox" type="checkbox" name="" id="" />
-          <div class="hamburger-lines">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-          </div>
-        </div>
-    
-        <div class="mobile_menu">
-          <ul>
-            <li><a href="site_moche_index.html">ACCUEIL</a></li>
-            <li><a href="site_moche_evenements.html">EVENEMENTS</a></li>
-            <li><a href="site_moche_Annuaire.html">ANNUAIRE</a></li>
-            <li><a href="site_moche_HistoiredeLiut.html">HISTOIRE DE L'IUT</a></li>
-            <li>
-              <a href="./site_moche_contact.html"><button>CONTACT</button></a>
-            </li>
-            <li>
-              <a href="site_moche_profil.html"><img src="./img/Vector.png" alt="" /></a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      </div>
+    </nav>
 
-      <section class="main_section">
-        <div class="background"></div>
-        <div class="main_profil_container">
-            <div class="profil_picture"></div>
-            <div class="name_container">
-                <h1 class="name"><?php echo("$_SESSION[prenom] $_SESSION[nom]") ?></h1>
-                <p class="email"><?php echo($_SESSION['user_email']) ?></p>
-            </div>
-            <div class="button_container">
-              <form method="post" action="php/modifier_profil.php">
-                <button class="green-btn">Modifier</button>
-              </form>
-            </div>
-
-              <form method="post" action="php/deconnexion.php">
-                  <button>Deconnexion</button>
-              </form>
-
+    <section class="main_section">
+      <div class="background"></div>
+      <div class="main_profil_container">
+        <div class="profil_picture"></div>
+        <div class="name_container">
+          <h1 class="name"></h1>
+          <p class="email"></p>
         </div>
-        <div class="metier_container">
-            <h2 class="meiter_title">Votre métier</h2>
-            <?php echo($metier) ?>
-        </div>
-        <div class="description_container">
-            <h2 class="biographie">Bigraphie</h2>
-            <?php echo($biographie) ?>
+        <div class="button_container">
+          <form method="post" action="php/modifier_profil.php">
+            <button class="green-btn">Modifier</button>
+          </form>
         </div>
 
-      </section>
+        <form method="post" action="php/deconnexion.php">
+          <button>Deconnexion</button>
+        </form>
+      </div>
+      <div class="metier_container">
+        <h2 class="meiter_title">Votre métier</h2>
+        <textarea></textarea>
+      </div>
+      <div class="description_container">
+        <h2 class="biographie">Biographie</h2>
+        <textarea class="textarea" placeholder=""></textarea>
+      </div>
+    </section>
 
-      <script src="main.js"></script>
-</body>
+    <script src="../main.js"></script>
+  </body>
 </html>

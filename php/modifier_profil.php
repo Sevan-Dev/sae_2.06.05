@@ -25,7 +25,7 @@
     <nav>
         <img src="../img/logonavbar.png" alt="" />
         <ul class="desktop_menu">
-          <li><a href="">ACCEUIL</a></li>
+          <li><a href="">ACCUEIL</a></li>
           <li><a href="">ACTUS</a></li>
           <li><a href="">EMPLOIS</a></li>
           <li><a href="">ANNUAIRE</a></li>
@@ -47,7 +47,7 @@
   
         <div class="mobile_menu">
           <ul>
-            <li><a href="">ACCEUIL</a></li>
+            <li><a href="">ACCUEIL</a></li>
             <li><a href="">ACTUS</a></li>
             <li><a href="">EMPLOIS</a></li>
             <li><a href="">ANNUAIRE</a></li>
