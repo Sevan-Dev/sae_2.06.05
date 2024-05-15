@@ -10,7 +10,7 @@
     <title>Les evenements</title>
   </head>
   <body>
-    <nav>
+  <nav>
       <img src="img/logonavbar.png" alt="" />
       <ul class="desktop_menu">
         <li><a href="index.php">ACCUEIL</a></li>
@@ -37,22 +37,20 @@
       <div class="mobile_menu">
         <ul>
           <li><a href="index.php">ACCUEIL</a></li>
-          <li><a href="#">EMPLOIS</a></li>
-          <li><a href="annuaire.html">ANNUAIRE</a></li>
+          <li><a href="evenements.php">EVENEMENTS</a></li>
+          <li><a href="Annuaire.html">ANNUAIRE</a></li>
           <li><a href="HistoiredeLiut.html">HISTOIRE DE L'IUT</a></li>
-
           <li>
-            <a href="contact.html"><button>CONTACT</button></a>
+            <a href="contact.html"
+              ><button class="green-btn">CONTACT</button></a
+            >
           </li>
           <li>
-            <a href="profil.php"
-              ><img src="img/navbarAccount.svg" alt=""
-            /></a>
+            <a href="profil.php"><img src="img/navbarAccount.svg" alt="" /></a>
           </li>
         </ul>
       </div>
     </nav>
-
     <section class="hero">
       <h1 class="title">Les événements à l'IUT</h1>
       <div class="parallax"></div>

@@ -21,6 +21,7 @@ nav {
 nav img {
   cursor: pointer;
   z-index: 99;
+
 }
 nav ul {
   display: flex;
@@ -47,19 +48,19 @@ nav button {
   cursor: pointer;
 }
 .mobile_menu {
-  transform: translateY(-100%);
-  transition: transform 0.5s ease-in-out;
-  z-index: 10;
-  position: fixed;
-  left: 0;
-  width: 100%;
-  padding: 10rem 0;
-  background-color: #fff;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+    z-index: 10;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    padding: 10rem 0;
+    background-color: #fff; 
 }
 
-.mobile_menu ul {
-  flex-direction: column;
-  text-align: start;
+.mobile_menu ul{
+    flex-direction: column;
+    text-align: start;
 }
 
 .nav-container {
@@ -76,18 +77,18 @@ nav button {
   opacity: 0;
   cursor: pointer;
 }
-.checkbox {
-  position: relative;
+.checkbox{
+    position: relative;
 }
-.hamburger-lines {
-  position: absolute;
-  left: 0;
-  top: 0;
+.hamburger-lines{
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 .nav-container .hamburger-lines {
   display: block;
   height: 26px;
-  width: 32px;
+  width: 32px; 
   z-index: 2;
   display: flex;
   flex-direction: column;

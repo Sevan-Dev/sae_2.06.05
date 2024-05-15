@@ -15,10 +15,6 @@
     <nav>
       <img src="img/logonavbar.png" alt="" />
       <ul class="desktop_menu">
-<<<<<<<< HEAD:index.html
-========
-
->>>>>>>> fbf5d908dde64534f5b7419b38ed8ca3a9035540:site_beau/index.php
         <li><a href="index.php">ACCUEIL</a></li>
         <li><a href="evenements.php">EVENEMENTS</a></li>
         <li><a href="Annuaire.html">ANNUAIRE</a></li>

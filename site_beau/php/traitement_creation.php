@@ -20,8 +20,8 @@
 			$error= "Email déjà enregistrer";
 		}
 		else{
-            $requete="INSERT INTO `utilisateurs` (`nom`, `prenom`, `email`, `mdp`, `annee_prom`) 
-            VALUES ('$nom', '$prenom', '$email', '$mdp', NULL);";
+            $requete="INSERT INTO `utilisateurs` (`nom`, `prenom`, `email`, `mdp`) 
+            VALUES ('$nom', '$prenom', '$email', '$mdp');";
 		    $result=$db->query($requete);
 
             $requete="INSERT INTO `details` (`email`, `type_detail`, `description`) 
